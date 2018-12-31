@@ -2224,6 +2224,22 @@
     ],
     "timestamp": "Jun/07/2021 23:06"
   },
+  "CF47797369": {
+    "contest_id": 431,
+    "language": "Java 8",
+    "path": "codeforces/431/A.java",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Black Square",
+    "problem_url": "https://codeforces.com/contest/431/problem/A",
+    "submission_id": "CF47797369",
+    "submission_url": "https://codeforces.com/contest/431/submission/47797369",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Dec/31/2018 20:19"
+  },
   "CF48859663": {
     "contest_id": 9,
     "language": "Java 8",
