@@ -2224,6 +2224,23 @@
     ],
     "timestamp": "Jun/07/2021 23:06"
   },
+  "CF69903226": {
+    "contest_id": 716,
+    "language": "GNU C++17",
+    "path": "codeforces/716/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Complete the Word",
+    "problem_url": "https://codeforces.com/contest/716/problem/B",
+    "submission_id": "CF69903226",
+    "submission_url": "https://codeforces.com/contest/716/submission/69903226",
+    "tags": [
+      "greedy",
+      "two pointers",
+      "*1300"
+    ],
+    "timestamp": "Jan/31/2020 15:32"
+  },
   "CF69973656": {
     "contest_id": 1006,
     "language": "GNU C++17",
