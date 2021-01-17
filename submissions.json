@@ -1,4 +1,21 @@
 {
+  "CF104584882": {
+    "contest_id": 239,
+    "language": "GNU C++17",
+    "path": "codeforces/239/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Easy Tape Programming",
+    "problem_url": "https://codeforces.com/contest/239/problem/B",
+    "submission_id": "CF104584882",
+    "submission_url": "https://codeforces.com/contest/239/submission/104584882",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Jan/17/2021 14:36"
+  },
   "CF104585888": {
     "contest_id": 7,
     "language": "GNU C++17",
