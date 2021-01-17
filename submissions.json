@@ -1,4 +1,22 @@
 {
+  "CF104619107": {
+    "contest_id": 844,
+    "language": "GNU C++17",
+    "path": "codeforces/844/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Diversity",
+    "problem_url": "https://codeforces.com/contest/844/problem/A",
+    "submission_id": "CF104619107",
+    "submission_url": "https://codeforces.com/contest/844/submission/104619107",
+    "tags": [
+      "greedy",
+      "implementation",
+      "strings",
+      "*1000"
+    ],
+    "timestamp": "Jan/17/2021 23:17"
+  },
   "CF104682557": {
     "contest_id": 977,
     "language": "GNU C++17",
