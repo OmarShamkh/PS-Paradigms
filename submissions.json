@@ -1,4 +1,21 @@
 {
+  "CF104585888": {
+    "contest_id": 7,
+    "language": "GNU C++17",
+    "path": "codeforces/7/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Kalevitch and Chess",
+    "problem_url": "https://codeforces.com/contest/7/problem/A",
+    "submission_id": "CF104585888",
+    "submission_url": "https://codeforces.com/contest/7/submission/104585888",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "*1100"
+    ],
+    "timestamp": "Jan/17/2021 14:49"
+  },
   "CF104586592": {
     "contest_id": 25,
     "language": "GNU C++17",
