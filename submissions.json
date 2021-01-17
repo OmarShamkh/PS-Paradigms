@@ -1,4 +1,21 @@
 {
+  "CF104584644": {
+    "contest_id": 1280,
+    "language": "GNU C++17",
+    "path": "codeforces/1280/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Beingawesomeism",
+    "problem_url": "https://codeforces.com/contest/1280/problem/B",
+    "submission_id": "CF104584644",
+    "submission_url": "https://codeforces.com/contest/1280/submission/104584644",
+    "tags": [
+      "implementation",
+      "math",
+      "*1800"
+    ],
+    "timestamp": "Jan/17/2021 14:32"
+  },
   "CF104584882": {
     "contest_id": 239,
     "language": "GNU C++17",
