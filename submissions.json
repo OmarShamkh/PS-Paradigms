@@ -1,4 +1,20 @@
 {
+  "CF104722520": {
+    "contest_id": 1294,
+    "language": "GNU C++17",
+    "path": "codeforces/1294/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Collecting Coins",
+    "problem_url": "https://codeforces.com/contest/1294/problem/A",
+    "submission_id": "CF104722520",
+    "submission_url": "https://codeforces.com/contest/1294/submission/104722520",
+    "tags": [
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jan/18/2021 22:49"
+  },
   "CF104724788": {
     "contest_id": 1311,
     "language": "GNU C++17",
