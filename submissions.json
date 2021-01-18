@@ -1,4 +1,22 @@
 {
+  "CF104722122": {
+    "contest_id": 1363,
+    "language": "GNU C++17",
+    "path": "codeforces/1363/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Odd Selection",
+    "problem_url": "https://codeforces.com/contest/1363/problem/A",
+    "submission_id": "CF104722122",
+    "submission_url": "https://codeforces.com/contest/1363/submission/104722122",
+    "tags": [
+      "brute force",
+      "implementation",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Jan/18/2021 22:39"
+  },
   "CF104722520": {
     "contest_id": 1294,
     "language": "GNU C++17",
