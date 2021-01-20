@@ -1,4 +1,21 @@
 {
+  "CF104907215": {
+    "contest_id": 991,
+    "language": "GNU C++17",
+    "path": "codeforces/991/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Getting an A",
+    "problem_url": "https://codeforces.com/contest/991/problem/B",
+    "submission_id": "CF104907215",
+    "submission_url": "https://codeforces.com/contest/991/submission/104907215",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Jan/20/2021 15:20"
+  },
   "CF104957329": {
     "contest_id": 978,
     "language": "GNU C++17",
