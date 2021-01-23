@@ -1,4 +1,20 @@
 {
+  "CF105128554": {
+    "contest_id": 105,
+    "language": "GNU C++17",
+    "path": "codeforces/105/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Transmigration",
+    "problem_url": "https://codeforces.com/contest/105/problem/A",
+    "submission_id": "CF105128554",
+    "submission_url": "https://codeforces.com/contest/105/submission/105128554",
+    "tags": [
+      "implementation",
+      "*1700"
+    ],
+    "timestamp": "Jan/23/2021 09:32"
+  },
   "CF105185243": {
     "contest_id": 31,
     "language": "GNU C++17",
