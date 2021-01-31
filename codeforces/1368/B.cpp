@@ -11,23 +11,26 @@ int main()
 {
     cin.tie(0);
     cin.sync_with_stdio(0);
-    ll k , a[10];
+    ll k;
     cin >> k;
-    //multiset <int> st;
-    for(int i=0; i<10; i++) a[i] = 1;
+    multiset <int> st;
+    for(int i=0; i<10; i++) st.insert(1);
     ll cur = 1;
-    int i= 0;
     while(cur < k){
-        cur /= a[i%10];
-        a[i%10]++;
-        cur *= a[i%10];
-        i++;
+        auto ans = *st.begin();
+        st.erase(st.begin());
+        cur /= ans;
+        ans++;
+        cur *= ans;
+        st.insert(ans);
     }
     string s = "codeforces";
-    for(int i=0; i<10; i++){
-        for(int j =1; j<=a[i]; j++){
-            cout << s[i];
+    int idx = 0;
+    for(auto i : st){
+        for(int j =0; j<i; j++){
+            cout << s[idx];
         }
+        idx++;
     }
 
     return 0;
