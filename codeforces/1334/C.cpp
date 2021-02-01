@@ -17,16 +17,23 @@ int main()
         ll n;
         cin >> n;
         for(int i=0; i<n; i++) cin >> a[i] >> b[i];
-        ll ans = 0 , mi = 1e18 ;
+        ll ans = 0 , mi = 1e18 , idx;
         for(int i=0; i<n; i++){
-            ans += max(0LL, a[i] - b[(i-1+n)%n]);
+            ll val = a[i] - max(0LL, a[i]-b[(i-1+n)%n]);
+            if(val < mi){
+                mi = val;
+                idx = i;
+            }
         }
-        for(int i=0; i<n; i++){
-            ll all = ans - max(0LL,a[i]-b[(i-1+n)%n]) + a[i];
-            mi = min(mi,all);
+        ans += a[idx];
+        a[(idx+1)%n] -= b[idx];
+        a[(idx+1)%n] = max(0LL , a[(idx+1)%n]);
+        for(int i= idx+1; i<idx+n; i++){
+            ans += a[i%n];
+            a[(i+1)%n] -= b[i%n];
+            a[(i+1)%n] = max(0LL , a[(i+1)%n]);
         }
-        
-        cout << mi << "\n";
+        cout << ans << "\n";
     }
     return 0;
 }
