@@ -1,4 +1,22 @@
 {
+  "CF106229472": {
+    "contest_id": 597,
+    "language": "GNU C++17",
+    "path": "codeforces/597/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Restaurant",
+    "problem_url": "https://codeforces.com/contest/597/problem/B",
+    "submission_id": "CF106229472",
+    "submission_url": "https://codeforces.com/contest/597/submission/106229472",
+    "tags": [
+      "dp",
+      "greedy",
+      "sortings",
+      "*1600"
+    ],
+    "timestamp": "Feb/01/2021 22:33"
+  },
   "CF106230740": {
     "contest_id": 1093,
     "language": "GNU C++17",
