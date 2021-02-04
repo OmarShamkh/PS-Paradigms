@@ -23,15 +23,13 @@ int main()
     cin >> q;
     while(q--){
         cin >> c >> m >> x;
-        int ans = min(c,m);
-        cout << min(ans, (c+m+x)/3) << "\n";
-        // int st = 0 , en = 1e8 , mid;
-        // while(st < en){
-        //     mid = st + (en - st+1) /2;
-        //     if(ok(mid)) st = mid;
-        //     else en = mid-1;
-        // }
-        // cout << st << "\n";
+        int st = 0 , en = 1e8 , mid;
+        while(st < en){
+            mid = st + (en - st+1) /2;
+            if(ok(mid)) st = mid;
+            else en = mid-1;
+        }
+        cout << st << "\n";
     }
     return 0;
 }
