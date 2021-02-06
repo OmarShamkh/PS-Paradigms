@@ -6,7 +6,7 @@ typedef long long ll;
 #define lp(x, s, e)      for(int x = (s); x < (e); x++)
 #define lpe(x, s, e)     for(int x = (s); x <= (e); x++)
 const int N = 1e5;
-double EBS = 1e-6;
+double EBS = 1e-7;
 int n,k,a[N];
 bool ok(double x){
     double have = 0 , need = 0;
