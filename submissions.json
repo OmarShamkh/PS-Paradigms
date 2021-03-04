@@ -1,4 +1,21 @@
 {
+  "CF109078774": {
+    "contest_id": 1409,
+    "language": "GNU C++17",
+    "path": "codeforces/1409/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Yet Another Two Integers Problem",
+    "problem_url": "https://codeforces.com/contest/1409/problem/A",
+    "submission_id": "CF109078774",
+    "submission_url": "https://codeforces.com/contest/1409/submission/109078774",
+    "tags": [
+      "greedy",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Mar/04/2021 14:35"
+  },
   "CF109081240": {
     "contest_id": 1409,
     "language": "GNU C++17",
