@@ -19,14 +19,9 @@ int dp(int len){
 int main()
 {
     INGZzz
-    //memset(mem,-1,sizeof mem);
+    memset(mem,-1,sizeof mem);
     cin >> t >> k;
-    //dp(1e5+1);
-    mem[0] = 1;
-    for(int i=1; i<N; i++){
-        mem[i] = mem[i-1];
-        if(i>=k) mem[i] = (mem[i-1] + mem[i-k])%M;
-    }
+    dp(1e5+1);
     for(int i=1; i<N; i++) mem[i] = (mem[i] + mem[i-1]) % M;
     while(t--){
         int a,b;
