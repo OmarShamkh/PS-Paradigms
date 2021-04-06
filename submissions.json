@@ -1,4 +1,20 @@
 {
+  "CF112149184": {
+    "contest_id": 1195,
+    "language": "GNU C++17",
+    "path": "codeforces/1195/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Basketball Exercise",
+    "problem_url": "https://codeforces.com/contest/1195/problem/C",
+    "submission_id": "CF112149184",
+    "submission_url": "https://codeforces.com/contest/1195/submission/112149184",
+    "tags": [
+      "dp",
+      "*1400"
+    ],
+    "timestamp": "Apr/06/2021 15:07"
+  },
   "CF112150956": {
     "contest_id": 455,
     "language": "GNU C++17",
