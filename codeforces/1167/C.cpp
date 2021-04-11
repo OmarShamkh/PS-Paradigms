@@ -1,54 +1,51 @@
 #include <bits/stdc++.h>
 using namespace std;
+typedef vector<int> vi;
 typedef long long ll;
-#define INGZzz  	cin.tie(0);cin.sync_with_stdio(0);
-const int N = 1e5;
-struct DSU
-{
-    vector<int> parent , sz;
-    set<int> roots;
-    DSU(int n){
-        parent = vector<int>(n+1);
-        sz = vector<int>(n+1);
-        for(int i=1; i<=n; i++){
-            parent[i] = i , sz[i] = 1;
-            roots.insert(i);
+#define loop(n)          for(int i = 0; i < (n); i++)
+#define lp(x, s, e)      for(int x = (s); x < (e); x++)
+#define lpe(x, s, e)     for(int x = (s); x <= (e); x++)
+#define INGZzz  cin.tie(0);cin.sync_with_stdio(0);
+const int N = 5e5+10;
+int n,m;
+bool visited[N];
+vector<int> adjlist[N];
+vector<int> group;
+int ans[N];
+void dfs(int node){
+    visited[node] = true;
+    group.push_back(node);
+    for(auto adjnode : adjlist[node]){
+        if(!visited[adjnode]){
+            dfs(adjnode);
         }
     }
-    int find(int x){
-        if(x == parent[x]) return x;
-        return parent[x] = find(parent[x]);
-    }
-
-    bool connect(int x, int y){
-        x = find(x);
-        y = find(y);
-        if(x == y) return false;
-        if(sz[x] < sz[y]) swap(x,y);
-        parent[y] = x;
-        sz[x] += sz[y];
-        roots.erase(y);
-        return true;
-    }
-};
-
+}
 int main()
 {
     INGZzz
-    int n,m; 
     cin >> n >> m;
-    DSU dsu(n);
-    for(int i=0; i<m; i++){
+    for(int i=1; i<=m; i++){
         int k;
         cin >> k;
-        vector<int> comp(k);
-        for(int j=0; j<k; j++){
-            cin >> comp[j];
-        }
-        for(int j=0; j<k-1; j++){
-            dsu.connect(comp[j] , comp[j+1]);
+        if(k == 0) continue;
+        int user;
+        cin >> user;
+        k--;
+        while(k--){
+            int newuser;
+            cin >> newuser;
+            adjlist[user].push_back(newuser);
+            adjlist[newuser].push_back(user);
         }
     }
-    for(int i=1; i<=n; i++) cout << dsu.sz[dsu.find(i)] << " ";
+    for(int node =1; node<=n; node++){
+        if(!visited[node]){
+            dfs(node);
+            for(auto i : group) ans[i] = group.size();
+            group.clear();
+        }
+    }
+    for(int i=1;i<=n; i++) cout << ans[i] << " ";
     return 0;
 }
