@@ -8,9 +8,9 @@ struct DSU
     vector<int> parent , sz;
     set<int> roots;
     DSU(int n){
-        parent = vector<int>(n+1);
-        sz = vector<int>(n+1);
-        for(int i=1; i<=n; i++){
+        parent = vector<int>(n);
+        sz = vector<int>(n);
+        for(int i=0; i<n; i++){
             parent[i] = i , sz[i] = 1;
             roots.insert(i);
         }
@@ -41,14 +41,14 @@ int main()
     #endif
     int n;
     cin >> n;
-    vector<pair<int,int>> edges(n+1);
-    for(int i=1; i<n; i++){
+    vector<pair<int,int>> edges(n);
+    for(int i=0; i<n-1; i++){
         cin >> edges[i].first >> edges[i].second;
-        // --edges[i].first , --edges[i].second;
+        --edges[i].first , --edges[i].second;
     }
     DSU dsu(n);
     vector<pair<int,int>> useless;
-    for(int i=1; i<n; i++){
+    for(int i=0; i<n-1; i++){
         int x = edges[i].first , y = edges[i].second;
         if(!dsu.connect(x,y)){
             useless.push_back({x,y});
@@ -57,8 +57,8 @@ int main()
     vector<int> rootss(dsu.roots.begin() , dsu.roots.end());
     cout << useless.size() << "\n";
     for(int i=0; i<rootss.size()-1; i++){
-        cout << useless[i].first << " " << useless[i].second << " ";
-        cout << rootss[i] << " " << rootss[i+1] << "\n";
+        cout << useless[i].first+1 << " " << useless[i].second+1 << " ";
+        cout << rootss[i]+1 << " " << rootss[i+1]+1 << "\n";
     }
     return 0;
 }
